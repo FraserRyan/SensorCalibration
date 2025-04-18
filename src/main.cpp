@@ -7,7 +7,7 @@
   Surveyor_pH_Isolated pH = Surveyor_pH_Isolated(A0);         
 #else
   #include "ph_surveyor.h"             
-  Surveyor_pH pH = Surveyor_pH(A0);   
+  Surveyor_pH pH = Surveyor_pH(pH_Pin);   
 #endif
 
 #ifdef TEMP_CAL
@@ -19,11 +19,22 @@
 #endif
 
 #ifdef PH_CAL
-  
+  uint8_t user_bytes_received = 0;                
+  const uint8_t bufferlen = 32;                   
+  char user_data[bufferlen];    
 #endif
 
 void setup() {
   Serial.begin(115200);
+
+#ifdef PH_CAL
+  Serial.println(F("Use commands \"CAL,7\", \"CAL,4\", and \"CAL,10\" to calibrate the circuit to those respective values"));
+  Serial.println(F("Use command \"CAL,CLEAR\" to clear the calibration"));
+  if (pH.begin()) {                                     
+    Serial.println("Loaded EEPROM");
+  } 
+#endif
+
   #ifdef TEMP_CAL
     Serial.println(F("Use command \"CAL,nnn.n\" to calibrate the circuit to a specific temperature\n\"CAL,CLEAR\" clears the calibration"));
     if(RTD.begin()){
@@ -49,18 +60,26 @@ void loop() {
       memset(user_data, 0, sizeof(user_data));
     }
     Serial.println(RTD.read_RTD_temp_C());
+    //uncomment for readings in F
+    // Serial.println(RTD.read_RTD_temp_F());
     delay(500);
   #endif
 
-  //uncomment for readings in F
-  // Serial.println(RTD.read_RTD_temp_F());
-  // Serial.println("Voltage:"); 
-  // Serial.print(analogRead(A1_temp_Pin));
-  // float tempC = (((analogRead((A1_temp_Pin)))/1000)-1.058)/0.009;
-  // Serial.print("Ryan's temp:");
-  // Serial.print(tempC);
-  // Serial.println("");
-  
+  #ifdef PH_CAL
+    if (Serial.available() > 0) {                                                      
+      user_bytes_received = Serial.readBytesUntil(13, user_data, sizeof(user_data));   
+    }
+
+    if (user_bytes_received) {                                                      
+      parse_cmd(user_data);                                                          
+      user_bytes_received = 0;                                                        
+      memset(user_data, 0, sizeof(user_data));                                         
+    }
+    
+    Serial.println(pH.read_ph());                                                      
+    delay(1000);
+  #endif
+
 
 }
 
@@ -80,6 +99,28 @@ void loop() {
           Serial.println("RTD CALIBRATED");
         }
       }
+    }
+  }
+#endif
+
+#ifdef PH_CAL
+  void parse_cmd(char* string) {                   
+    strupr(string);                                
+    if (strcmp(string, "CAL,7") == 0) {       
+      pH.cal_mid();                                
+      Serial.println("MID CALIBRATED");
+    }
+    else if (strcmp(string, "CAL,4") == 0) {            
+      pH.cal_low();                                
+      Serial.println("LOW CALIBRATED");
+    }
+    else if (strcmp(string, "CAL,10") == 0) {      
+      pH.cal_high();                               
+      Serial.println("HIGH CALIBRATED");
+    }
+    else if (strcmp(string, "CAL,CLEAR") == 0) { 
+      pH.cal_clear();                              
+      Serial.println("CALIBRATION CLEARED");
     }
   }
 #endif
