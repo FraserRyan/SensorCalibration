@@ -1,0 +1,52 @@
+[37m17:40:13.867 > P[37mMP1: [ 92071][E][Wi[37mr[37me.cpp:513][37m [37mrequestFrom[37m(): i2cRead[37m [37mreturned Er[37mr[37mor -1
+17:40:13.869 > No [37mD[37mata   PMP2[37m:[37m [ 92077][E[37m][37m[Wire.cpp:[37m5[37m13] request[37mF[37mrom(): i2c[37mR[37mead returne[37md[37m Error -1[37m
+[37m17:40:13.879 > No Data   [37mP[37mMP3: [ 9208[37m5[37m][E][Wire.[37mc[37mpp:513] req[37mu[37mestFrom(): [37mi[37m2cRead ret[37mu[37mrned Error[37m [37m-1
+17:40:13.886 > No Dat[37ma[37m 
+[37m17:40:15.885 > P[37mMP1: [ [37m94092][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+17:40:15.900 > No Data   PMP2: [ 94098][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+17:40:15.900 > No Data   P[37mM[37mP3: [ 9410[37m6[37m][E][Wire.[37mc[37mpp:513] req[37mu[37mestFrom(): [37mi[37m2cRead ret[37mu[37mrned Error -1
+17:40:15.909 > No Data[37m [37m
+[37m17:40:17.908 > P[37mMP1: [ 9[37m6[37m113][E][Wi[37mr[37me.cpp:513] [37mr[37mequestFrom([37m): i2cRead [37mr[37meturned Err[37mo[37mr -1
+17:40:17.915 > No [37mD[37mata   PMP2:[37m [37m[ 96119][E[37m][37m[Wire.cpp:5[37m1[37m3] requestF[37mr[37mom(): i2cR[37me[37mad returned[37m [37mError -1
+[37m17:40:17.920 > N[37mo Data   P[37mM[37mP3: [ 96127[37m][E][Wire.c[37mp[37mp:513] requ[37me[37mstFrom(): [37mi[37m2cRead retu[37mr[37mned Error [37m-[37m1
+17:40:17.929 > No Data[37m [37m
+[37m17:40:19.928 > P[37mMP1: [ 9[37m8[37m134][E][Wi[37mr[37me.cpp:513] [37mr[37mequestFrom([37m)[37m: i2cRead [37mr[37meturned Err[37mo[37mr -1
+17:40:19.928 > No D[37ma[37mta   PMP2:[37m [37m[ 98140][E][37m[[37mWire.cpp:5[37m1[37m3] requestF[37mr[37mom(): i2cR[37me[37mad returned[37m [37mError -1
+[37m17:40:19.941 > N[37mo Data   P[37mM[37mP3: [ 98148[37m][37m[E][Wire.c[37mp[37mp:513] requ[37me[37mstFrom(): [37mi[37m2cRead retu[37mr[37mned Error [37m-[37m1
+17:40:19.946 > No Data [37m[37m
+[37m17:40:21.951 > P[37mMP1: [100[37m1[37m55][E][Wir[37me[37m.cpp:513] [37mr[37mequestFrom([37m)[37m: i2cRead r[37me[37mturned Err[37mo[37mr -1
+17:40:21.957 > No D[37ma[37mta   PMP2: [37m[[37m100161][E][37m[[37mWire.cpp:5[37m1[37m3] requestF[37mr[37mom(): i2cRe[37ma[37md returned[37m [37mError -1
+[37m17:40:21.965 > N[37mo Data   PM[37mP[37m3: [100169[37m][37m[E][Wire.cp[37mp[37m:513] requ[37me[37mstFrom(): i[37m2[37mcRead retu[37mr[37mned Error -[37m1[37m
+17:40:21.971 > No Data [37m[37m
+[37m17:40:23.971 > P[37mM[37mP1: [1021[37m7[37m6][E][Wir[37me[37m.cpp:513] r[37me[37mquestFrom([37m)[37m: i2cRead r[37me[37mturned Erro[37mr[37m -1
+17:40:23.977 > No D[37ma[37mta   PMP2: [37m[[37m102182][E][37m[[37mWire.cpp:51[37m3[37m] requestF[37mr[37mom(): i2cRe[37ma[37md returned [37mE[37mrror -1
+17:40:23.983 > N[37mo[37m Data   PM[37mP[37m3: [102190[37m][37m[E][Wire.cp[37mp[37m:513] requ[37me[37mstFrom(): i[37m2[37mcRead retu[37mr[37mned Error -[37m1[37m
+17:40:23.991 > No Data [37m[37m
+[37m17:40:25.992 > P[37mM[37mP1: [104[37m1[37m97][E][Wir[37me[37m.cpp:513] r[37me[37mquestFrom()[37m:[37m i2cRead r[37me[37mturned Err[37mo[37mr -1
+17:40:25.998 > No Da[37mt[37ma   PMP2: [37m[[37m104203][E][37m[[37mWire.cpp:51[37m3[37m] requestFrom(): i2cRe[37ma[37md returned [37mE[37mrror -1
+17:40:26.006 > N[37mo[37m Data   PM[37mP[37m3: [104211[37m][37m[E][Wire.cp[37mp[37m:513] reque[37ms[37mtFrom(): i[37m2[37mcRead retur[37mn[37med Error -[37m1[37m
+17:40:26.014 > No Data [37m[37m
+[37m17:40:28.012 > P[37mM[37mP1: [1062[37m1[37m8][E][Wire[37m.[37mcpp:513] r[37me[37mquestFrom()[37m:[37m i2cRead r[37me[37mturned Erro[37mr[37m -1
+17:40:28.021 > No Da[37mt[37ma   PMP2: [37m[[37m106224][E][[37mW[37mire.cpp:51[37m3[37m] requestFr[37mo[37mm(): i2cRea[37md[37m returned [37mE[37mrror -1
+17:40:28.027 > N[37mo[37m Data   PMP[37m3[37m: [106232][37m[[37mE][Wire.cp[37mp[37m:513] reque[37ms[37mtFrom(): i[37m2[37mcRead retur[37mn[37med Error -1[37m[37m
+17:40:28.035 > No Data [37m
+[37m17:40:30.035 > P[37mMP1: [108[37m2[37m39][E][Wire[37m.[37mcpp:513] re[37mq[37muestFrom()[37m:[37m i2cRead re[37mt[37murned Erro[37mr[37m -1
+17:40:30.040 > No Da[37mt[37ma   PMP2: [[37m1[37m08245][E][[37mW[37mire.cpp:513[37m][37m requestFr[37mo[37mm(): i2cRea[37md[37m returned [37mE[37mrror -1
+17:40:30.042 > N[37mo[37m Data   PMP[37m3[37m: [108253][[37mE[37m][Wire.cpp[37m:[37m513] reque[37ms[37mtFrom(): i2[37mc[37mRead return[37me[37md Error -1[37m[37m
+17:40:30.055 > No Data [37m
+[37m17:40:32.054 > P[37mM[37mP1: [110260[37m][37m[E][Wire[37m.[37mcpp:513] re[37mq[37muestFrom():[37m [37mi2cRead re[37mt[37murned Error[37m [37m-1
+17:40:32.062 > No Dat[37ma[37m   PMP2: [[37m1[37m10266][E][[37mW[37mire.cpp:513[37m][37m requestFro[37mm[37m(): i2cRea[37md[37m returned E[37mr[37mror -1
+17:40:32.069 > No[37m [37mData   PMP[37m3[37m: [110274][[37mE[37m][Wire.cpp[37m:[37m513] reques[37mt[37mFrom(): i2[37mc[37mRead return[37me[37md Error -1[37m[37m
+17:40:32.077 > No Data [37m
+[37m17:40:34.073 > P[37mMP1: [1122[37m8[37m1][E][Wire.[37mc[37mpp:513] req[37mu[37mestFrom():[37m [37mi2cRead ret[37mu[37mrned Error[37m [37m-1
+17:40:34.082 > No Dat[37ma[37m   PMP2: [[37m1[37m12287][E][W[37mi[37mre.cpp:513[37m][37m requestFro[37mm[37m(): i2cRea[37md[37m returned E[37mr[37mror -1
+17:40:34.090 > No[37m [37mData   PMP[37m3[37m: [112295][[37mE[37m][Wire.cpp:[37m5[37m13] reques[37mt[37mFrom(): i2[37mc[37mRead return[37me[37md Error -1[37m
+[37m17:40:34.099 > No Data [37m
+[37m17:40:36.096 > P[37mMP1: [11430[37m2[37m][E][Wire.[37mc[37mpp:513] re[37mquestFrom():[37m [37mi2cRead ret[37mu[37mrned Error[37m [37m-1
+17:40:36.103 > No Dat[37ma   PMP2: [1[37m1[37m4308][E][W[37mi[37mre.cpp:513][37m [37mrequestFro[37mm[37m(): i2cRead[37m [37mreturned E[37mr[37mror -1
+17:40:36.112 > No[37m [37mData   PMP3[37m:[37m [114316][[37mE[37m][Wire.cpp:[37m5[37m13] reques[37mt[37mFrom(): i2c[37mR[37mead return[37me[37md Error -1[37m
+[37m17:40:36.119 > No Data 
+[37m17:40:38.119 > P[37mM[37mP1: [116323[37m][37m[E][Wire.[37mc[37mpp:513] req[37mu[37mestFrom(): [37mi[37m2cRead ret[37mu[37mrned Error[37m [37m-1
+17:40:38.124 > No Data[37m [37m  PMP2: [1[37m1[37m6329][E][W[37mi[37mre.cpp:513][37m [37mrequestFrom[37m([37m): i2cRead[37m [37mreturned Er[37mr[37mor -1
+17:40:38.131 > No [37mD[37mata   PMP3[37m:[37m [116337][E[37m][37m[Wire.cpp:[37m5[37m13] request[37mF[37mrom(): i2c[37mR[37mead returne[37md[37m Error -1[37m
+[37m17:40:38.139 > No Data 
